@@ -1,0 +1,30 @@
+.container {
+  padding: 10px;
+  background-color: wheat;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.container > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+  border: 1px solid tan;
+  padding: 5px;
+}
+input {
+  padding: 8px;
+}
+.submit {
+  width: 100%;
+  background-color: tan;
+  border: 1px solid black;
+}
+section {
+  border: 1px solid tan;
+  padding: 10px;
+}
+section p {
+  margin-bottom: 10px;
+}

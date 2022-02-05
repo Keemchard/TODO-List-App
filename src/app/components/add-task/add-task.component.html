@@ -1,0 +1,37 @@
+<div class="main-form-con">
+  <form class="container" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="text">Task Title</label>
+      <input type="text" name="text" [(ngModel)]="text" id="text" />
+    </div>
+    <div>
+      <label for="day">Task Day</label>
+      <input type="text" name="day" [(ngModel)]="day" id="day" />
+    </div>
+    <div>
+      <label for="reminder">Task Reminder</label>
+      <input type="text" name="reminder" [(ngModel)]="reminder" id="reminder" />
+    </div>
+    <div>
+      <input type="submit" value="Submit Task" class="submit" />
+    </div>
+    <section>
+      <!-- <h2 style="color: red">FormsModule -> [(ngModel)]</h2> -->
+      <p>Task Title: {{ text }}</p>
+      <p>Task Day: {{ day }}</p>
+      <p>Task Reminder: {{ reminder }}</p>
+    </section>
+  </form>
+  <div
+    style="
+      margin: 10px;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: tan;
+      display: flex;
+      flex-direction: column;
+    "
+  >
+    <button class="exit-form">Close</button>
+  </div>
+</div>
