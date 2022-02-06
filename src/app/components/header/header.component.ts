@@ -12,25 +12,22 @@ export class HeaderComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    //here i can took the class name (.main-form-con) of the other component which is the add-task
+    //here i can took the class name (.add-task-con) of the other component which is the add-task
     //and create a variable from it and modify its style using DOM
     //so i just want to say that it is possible :)
     //tooking other class name from other component and modify it in other ts component file
     //just like what i did below
-    let mainFormCon: HTMLDivElement = document.querySelector('.main-form-con');
+    let addTaskCon: HTMLDivElement = document.querySelector('.add-task-con'); //this class is from parent
 
     let appBtn: HTMLButtonElement = document.querySelector('.app-button');
     //the appBTn var which holds the .app-button class is basically a class from this component,
     //not from other component
     appBtn.addEventListener('click', function () {
-      mainFormCon.style.padding = '20px';
-      mainFormCon.style.transition = '1s';
-      mainFormCon.style.backgroundColor = 'red';
-      mainFormCon.style.display = 'block';
+      addTaskCon.style.display = 'flex';
     });
   }
 
-  addBtnClick() {
-    alert('hey asdasd');
-  }
+  // addBtnClick() {
+  //   alert('hey asdasd');
+  // }
 }

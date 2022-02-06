@@ -1,6 +1,13 @@
 .container {
-  margin: auto;
+  /* margin: auto; */
   width: 450px;
   background-color: tan;
   padding: 10px;
+}
+.main-container {
+  background-color: antiquewhite;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

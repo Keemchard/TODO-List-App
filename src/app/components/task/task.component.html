@@ -1,37 +1,44 @@
 <div class="container">
-  <app-add-task (onAddTask)="AddTask($event)"></app-add-task>
+  <div class="add-task-con">
+    <app-add-task (onAddTask)="AddTask($event)"></app-add-task>
+  </div>
+
   <!-- <router-outlet (onAddTask)="AddTask($event)"></router-outlet> -->
   <div class="task-list" *ngFor="let task of taskVariable">
-    <h1>{{ task.text }}</h1>
-    <p>{{ task.day }}</p>
-    <p>{{ task.reminder }}</p>
-    <button (click)="deleteTask(task)" class="delete-btn">delete</button>
-
-    <div class="update-con">
-      <input
-        type="text"
-        name="updateText"
-        [(ngModel)]="updateText"
-        placeholder="{{ task.text }}"
-      />
-      <input
-        type="text"
-        name="updateDay"
-        [(ngModel)]="updateDay"
-        placeholder="{{ task.day }}"
-      />
-      <input
-        type="text"
-        name="updateReminder"
-        [(ngModel)]="updateReminder"
-        placeholder="{{ task.reminder }}"
-      />
+    <div class="task-con-list">
+      <h1>{{ task.text }}</h1>
+      <p>{{ task.day }}</p>
+      <p>{{ task.reminder }}</p>
+      <button (click)="deleteTask(task)" class="delete-btn">delete</button>
     </div>
-    <button (click)="updateTask(task)">Edit</button>
-    <div>
-      <p>Updated Task Title = {{ updateText }}</p>
-      <p>Updated Task Day = {{ updateDay }}</p>
-      <p>Updated Task Reminder = {{ updateReminder }}</p>
+
+    <div class="update-main-form">
+      <div class="update-con">
+        <input
+          type="text"
+          name="updateText"
+          [(ngModel)]="updateText"
+          placeholder="{{ task.text }}"
+        />
+        <input
+          type="text"
+          name="updateDay"
+          [(ngModel)]="updateDay"
+          placeholder="{{ task.day }}"
+        />
+        <input
+          type="text"
+          name="updateReminder"
+          [(ngModel)]="updateReminder"
+          placeholder="{{ task.reminder }}"
+        />
+      </div>
+      <button (click)="updateTask(task)">Update</button>
+      <div>
+        <p>Updated Task Title: {{ updateText }}</p>
+        <p>Updated Task Day: {{ updateDay }}</p>
+        <p>Updated Task Reminder: {{ updateReminder }}</p>
+      </div>
     </div>
   </div>
 </div>

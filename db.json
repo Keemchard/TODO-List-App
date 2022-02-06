@@ -1,28 +1,22 @@
 {
   "task": [
     {
-      "id": 1,
-      "text": "Clean the PC",
-      "day": "Bukas",
-      "reminder": "false"
-    },
-    {
-      "id": 3,
-      "text": "Food Shopping",
-      "day": "December 12, 2021",
-      "reminder": true
-    },
-    {
       "id": 4,
-      "text": "Pay Day",
-      "day": "December 10, 2021",
-      "reminder": true
+      "text": "Clean the PC",
+      "day": "Febuary 10, 2022",
+      "reminder": "true"
     },
     {
       "id": 5,
-      "text": "Utot Day",
-      "day": "December 10, 2021",
-      "reminder": true
+      "text": "this is not utot day",
+      "day": "Tomorrow",
+      "reminder": "Yes"
+    },
+    {
+      "text": "practice Day",
+      "day": "Feb 14 2022",
+      "reminder": "true",
+      "id": 6
     }
   ]
 }

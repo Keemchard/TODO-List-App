@@ -41,14 +41,19 @@ export class TaskComponent implements OnInit {
   //   let updateCon: HTMLDivElement = document.querySelector('.update-con');
   //   updateCon.style.display = 'flex';
   // }
+
   updateText: string;
   updateDay: string;
   updateReminder: boolean;
   updateTask(task: TaskInterface) {
+    // let textInput: HTMLInputElement = document.querySelector('#text');
+    // let dayInput: HTMLInputElement = document.querySelector('#day');
+    // let redminderInput: HTMLInputElement = document.querySelector('#text');
     // console.log(task);
     task.text = this.updateText;
     task.day = this.updateDay;
     task.reminder = this.updateReminder;
+
     this.taskServiceObj.updateTaskFromService(task).subscribe();
   }
 }

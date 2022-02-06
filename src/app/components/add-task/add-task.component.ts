@@ -27,10 +27,12 @@ export class AddTaskComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    let mainFormCon: HTMLDivElement = document.querySelector('.main-form-con');
+    let addTaskCon: HTMLDivElement = document.querySelector('.add-task-con'); //this class is from parent
     let exitFormBtn: HTMLButtonElement = document.querySelector('.exit-form');
+
+    addTaskCon.style.display = 'none';
     exitFormBtn.addEventListener('click', function () {
-      mainFormCon.style.display = 'none';
+      addTaskCon.style.display = 'none';
     });
   }
 
@@ -47,4 +49,11 @@ export class AddTaskComponent implements OnInit {
     this.day = '';
     this.reminder = false;
   }
+
+  // onUpdateTask(){
+  //   const updatedTask = {
+  //     this.text
+  //   }
+
+  // }
 }

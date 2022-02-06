@@ -12,12 +12,52 @@
   padding: 10px;
   position: relative;
 }
+.task-list > div {
+  background-color: wheat;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid white;
+}
+.task-con-list {
+  margin-top: 20px;
+}
+.update-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.update-con input {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.update-main-form button {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid white;
+  background-color: tan;
+  margin-bottom: 10px;
+}
 .delete-btn {
   background-color: wheat;
-  color: red;
+
+  border: 1px solid white;
   font-weight: bold;
   padding: 3px;
   position: absolute;
   top: 3px;
   right: 3px;
+}
+.add-task-con {
+  /* background-color: rebeccapurple; */
+  padding: 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  backdrop-filter: blur(5px);
 }
